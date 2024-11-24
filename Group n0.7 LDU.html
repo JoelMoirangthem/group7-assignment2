@@ -1,0 +1,43 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Operations</title>
+    <script src="LDU.js" defer></script>
+    <link rel="stylesheet" href="LDU.css">
+</head>
+<body>
+
+    <h1 class="heading">Matrix Operations</h1>
+    <p class="text">This application performs various matrix operations such as generating a matrix, performing elimination, creating a diagonal matrix, calculating upper matrices, and decomposing matrices into LDU format. Follow the steps to complete each matrix operation.</p>
+
+    <!-- Input for matrix order -->
+    <label for="order" class="heading"><h2>Enter the order of the matrix:</h2></label>
+    <input type="number" id="order" min="1" placeholder="Matrix order (e.g., 3)">
+    <p class="text">Specify the order of the matrix (n x n), for instance, enter "3" for a 3x3 matrix. This input will determine the dimensions of all matrices created in the operations below.</p>
+    <div class="matrix-container">
+
+        <!-- Matrix A -->
+        <button onclick="show_matrix('matrixA')">Create A Matrix</button>
+        <div id="matrixA" class="matrix-display">
+            <h2>Matrix A</h2>
+            <p>In this section, you will create the initial matrix A based on the specified order. This matrix will serve as the foundation for subsequent operations, including elimination and decomposition.</p>
+        </div>
+
+        <!-- Elimination Matrix and Upper Matrix U -->
+        <button onclick="cal_eli('steps')">Calculate Elimination Matrix and U</button>
+        <div id="steps" class="matrix-display">
+            <h2>Elimination Steps & U</h2>
+            <p>This step performs Gaussian elimination on matrix A to reduce it to an upper triangular form, resulting in the matrix U. The elimination steps and the resultant U matrix are displayed here.</p>
+        </div>
+
+        <!-- Diagonal Matrix D -->
+        <button onclick="diagonal('diagonalMatrix')">Create Diagonal Matrix D</button>
+        <div id="diagonalMatrix" class="matrix-display">
+            <h2>Diagonal Matrix D</h2>
+            <p>Here, we create a diagonal matrix D from matrix U. Each diagonal entry reflects the scaling factors applied during the elimination process.</p>
+        </div>
+</body>
+</html>
+    
