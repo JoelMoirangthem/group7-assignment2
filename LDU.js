@@ -112,7 +112,7 @@ function X(id) {
         X.push(temp_X);
     }
 
-    // Now we correctly display U' matrix
+    
     document.getElementById(id).innerHTML = `<h2>U' matrix </h2>` + matrix_format(X);
     return X; // Return X matrix so we can use it in LDU computation
 }
