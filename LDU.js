@@ -99,7 +99,7 @@ function cal_eli(id) {
 }
 
 
-// Function to find U'
+// Function 
 function X(id) {
     let X = [];
     for (let i = 0; i < order; i++) {
