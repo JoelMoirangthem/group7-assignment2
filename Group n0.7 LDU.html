@@ -38,6 +38,26 @@
             <h2>Diagonal Matrix D</h2>
             <p>Here, we create a diagonal matrix D from matrix U. Each diagonal entry reflects the scaling factors applied during the elimination process.</p>
         </div>
+        <!-- Upper Matrix U' -->
+        <button onclick="X('upperMatrix')">Calculate U'</button>
+        <div id="upperMatrix" class="matrix-display">
+            <h2>U' Matrix</h2>
+            <p>U' matrix is calculated by normalizing the upper triangular matrix U using the diagonal elements of D.</p>
+        </div>
+
+        <!-- L Matrix -->
+        <button onclick="L_Matrix('LMatrix')">Calculate L Matrix</button>
+        <div id="LMatrix" class="matrix-display">
+            <h2>L Matrix</h2>
+            <p>The L matrix is derived from the elimination matrices applied to transform A into U. It represents the lower triangular matrix in the decomposition process.</p>
+        </div>
+
+        <!-- LDU Decomposition -->
+        <button onclick="LDU('LDUResult')">Calculate LDU</button>
+        <div id="LDUResult" class="matrix-display">
+            <h2>LDU Decomposition</h2>
+            <p>This is the final LDU decomposition of the original matrix A. It is the product of the matrices L, D, and U', which reconstruct A.</p>
+        </div>
 </body>
 </html>
     

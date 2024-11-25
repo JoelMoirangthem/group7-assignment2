@@ -169,3 +169,9 @@ function LDU(id) {
     document.getElementById(id).innerHTML += <h2>LDU matrix </h2> + matrix_format(second);
     document.getElementById(id).innerHTML += <h2>A matrix </h2> + matrix_format(A);
 }
+// Function to create an elimination matrix
+function Elimination_Matrix(row, col, value, order) {
+    let temp_matrix = Identity(order);
+    temp_matrix[row][col] = value;
+    return temp_matrix;
+}
