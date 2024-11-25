@@ -154,7 +154,7 @@ function diagonal(id) {
     }
     
     // Display the D matrix in the specified HTML element
-    document.getElementById(id).innerHTML = <h2>D matrix </h2> + matrix_format(D);
+    document.getElementById(id).innerHTML = "<h2>D matrix </h2>" + matrix_format(D);
 } 
 
 
@@ -166,8 +166,8 @@ function LDU(id) {
     let first = mult_matrix(L, D, order); 
     let second = mult_matrix(first, X_matrix, order); 
     // Update the page with the LDU matrix
-    document.getElementById(id).innerHTML += <h2>LDU matrix </h2> + matrix_format(second);
-    document.getElementById(id).innerHTML += <h2>A matrix </h2> + matrix_format(A);
+    document.getElementById(id).innerHTML += "<h2>LDU matrix </h2>" + matrix_format(second);
+    document.getElementById(id).innerHTML += "<h2>A matrix </h2> "+ matrix_format(A);
 }
 // Function to create an elimination matrix
 function Elimination_Matrix(row, col, value, order) {
